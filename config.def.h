@@ -149,6 +149,10 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
+	{ MODKEY,               XK_u,           externalpipe,   {.v =  "xurls | dmenu -l 10 | xargs -r xdg-open"} },
+	{ MODKEY,               XK_U,           externalpipe,   {.v =  "xurls | dmenu -l 10 | xargs -r xdg-open"} },
+	{ MODKEY,               XK_p,           externalpipe,   {.v =  "cat > /tmp/st_stdout"} }, /* Export screen to file. */
+	{ MODKEY,               XK_P,           externalpipe,   {.v =  "cat > /tmp/st_stdout"} }, /* Export screen to file. */
 };
 
 /*
