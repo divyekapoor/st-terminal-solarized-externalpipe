@@ -6,7 +6,7 @@ include config.mk
 SRC = st.c
 OBJ = ${SRC:.c=.o}
 
-all: options st
+all: config.h options st
 
 options:
 	@echo st build options:
